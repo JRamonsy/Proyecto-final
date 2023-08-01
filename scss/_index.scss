@@ -1,50 +1,70 @@
 .titulo-pagina {
-    margin: 10px;
-    text-align: center;
+  margin: 10px;
+  text-align: center;
 }
 
 #contenedor-descripcion {
-    display: flex;
-    padding: 10px;
-    .titulo1 {
-        margin-left: 40px;
-        padding-left: 100px;
-        
-    }
-
-    .descripcion {
-        padding-left: 50px;
-        width: 500px;
-        margin: 10px;
-        text-align: justify;
-    }
-    .contenedor-tarjeta {
-        width: 500px;
-        text-align: center;
-        
-        overflow: hidden;
-        margin: 20px;
-
-        .tarjeta {
-            width: 100%;
-            transition: 0.5s;
-            object-fit: cover;
-        }
-        .tarjeta:hover{
-            transform: scale(1.1);
-        }
-    }
-}
-
-.sections{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 5px;
-}
-.div1, .div2, .div3{
-    background: grey;
-    width: 300px;
-    height: 300px;
-   
+  display: flex;
+  padding: 10px;
+  .titulo1 {
+    margin-left: 40px;
+    padding-left: 100px;
     
+  }
+
+  .descripcion {
+    padding-left: 50px;
+    width: 500px;
+    margin: 10px;
+    text-align: justify;
+  }
+  .contenedor-tarjeta {
+    width: 500px;
+    text-align: center;
+    
+    overflow: hidden;
+    margin: 20px;
+
+    .tarjeta {
+      width: 100%;
+      transition: 0.5s;
+      object-fit: cover;
+    }
+    .tarjeta:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+.cards{
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3.5em;
+  
+}
+.card-item{
+  background: white;
+  margin-bottom: 3em;
+}
+.card-content{
+  width: 90%;
+  margin: 0 auto;
+}
+.card-picture{
+  width: 90%;
+  margin: 0 auto;
+  background: cornflowerblue;
+  position: relative;
+  bottom: 2em;
+}
+.card-img{
+  width: 100%;
+}
+.card-title{
+  margin-bottom: 1em;
 }

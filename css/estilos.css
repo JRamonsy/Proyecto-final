@@ -107,16 +107,40 @@ footer .slogan {
   transform: scale(1.1);
 }
 
-.sections {
+.cards {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
-  gap: 5px;
+  gap: 3.5em;
 }
 
-.div1, .div2, .div3 {
-  background: grey;
-  width: 300px;
-  height: 300px;
+.card-item {
+  background: white;
+  margin-bottom: 3em;
+}
+
+.card-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-picture {
+  width: 90%;
+  margin: 0 auto;
+  background: cornflowerblue;
+  position: relative;
+  bottom: 2em;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-title {
+  margin-bottom: 1em;
 }
 
 .contenedor-servicios {
@@ -461,7 +485,7 @@ footer .slogan {
 
 body {
   padding-top: 90px;
-  background: linear-gradient(rgb(241, 236, 236), white);
+  background: linear-gradient(rgb(228, 226, 226), white);
 }
 
 /*# sourceMappingURL=estilos.css.map */
