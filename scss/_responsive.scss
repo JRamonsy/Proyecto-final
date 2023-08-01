@@ -1,38 +1,19 @@
 /* index*/
-@media (max-width: 600px) {
-    #contenedor-descripcion {
-        flex-direction: column;
-        align-items: center;
-    }
+
+@media screen and (max-width: 1023px) {
+  #contenedor-descripcion {
+    flex-direction: column;
+    flex: 100%;
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .card-item{
+    flex: 90%;
+    max-width: 600px;
+  }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-    #contenedor-descripcion {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 600px) {
-    .bienvenidos {
-        text-align: center;
-    }
-}
-
-@media (max-width: 600px) {
-    .contenedor-tarjeta {
-        text-align: center;
-        margin: auto;
-        align-self: center;
-    }
-}
-
-@media (max-width: 600px) {
-    .bienvenidos {
-        text-align: center;
-        padding-right: 140px;
-    }
-}
 
 /*servicios*/
 @media all and (max-width: 1023px) {
