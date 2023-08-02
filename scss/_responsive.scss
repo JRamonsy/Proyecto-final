@@ -92,42 +92,39 @@
 }
 
 /*tarifas*/
+
 @media screen and (min-width: 600px) and (max-width: 1023px) {
     .contenedor-tarifas {
-    grid-template-areas: "titulo-Tarifas titulo-Tarifas titulo-Tarifas titulo-Tarifas"
-    "contenido1 contenido1 contenido1 contenido1"
-    "widget-1 widget-1 widget-1 widget-2"
-    "contenido2 contenido2 contenido2 contenido2"
-    "widget-3 widget-3 widget-3 widget-4"
-    "pie-tarifas pie-tarifas pie-tarifas pie-tarifas"
-}
-}
-
-@media screen and (max-width: 600px) {
-.contenedor-tarifas {
-    grid-template-areas: "titulo-Tarifas titulo-Tarifas titulo-Tarifas titulo-Tarifas"
-    "contenido1 contenido1 contenido1 contenido1"
-    "widget-1 widget-1 widget-1 widget-1"
-    "widget-2 widget-2 widget-2 widget-2"
-    "contenido2 contenido2 contenido2 contenido2"
-    "widget-3 widget-3 widget-3 widget-3"
-    "widget-4 widget-4 widget-4 widget-4"
-    "pie-tarifas pie-tarifas pie-tarifas pie-tarifas"
-}
-
-.contenedor-tarifas {
-
-    text-align: center;
-}
-
-.contenedor-tarifas .widget-1,
-.contenedor-tarifas .widget-2,
-.contenedor-tarifas .widget-3,
-.contenedor-tarifas .widget-4 {
     width: 90%;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "titulo-Tarifas titulo-Tarifas"
+                          "contenido1 contenido1"
+                          "widget-1 widget-2"
+                          "contenido2 contenido2"
+                          "widget-3 widget-4"
+                          "pie-tarifas pie-tarifas"
+  }
 }
-
+/*
+@media screen and (max-width: 1023px) {
+  .contenedor-tarifas {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "titulo-Tarifas "
+                          "contenido1"
+                          "widget-1"
+                          "widget-2"
+                          "contenido2"
+                          "widget-3"
+                          "widget-4"
+                          "pie-tarifas"
+  }
 }
+*/
 
 /*contacto y ubicacion*/
 @media screen and (min-width: 600px) and (max-width: 1023px) {
