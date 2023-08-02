@@ -9,36 +9,55 @@
 }
 
 .contenedor-sobre-mi {
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 5px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(7, auto);
+  align-content: space-evenly;
   .titulo-sobre-mi {
     color: black;
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .estudios {
     grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    margin: 40px;
+  }
+  .nombre{
+    grid-column-start: 1;
     grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
   }
   .contenido-sobre-mi {
-    grid-column: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
     text-align: justify;
+    margin: 50px;
   }
   .sidebar-sobre-mi {
     width: 350px;
-    grid-column: 3/4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-row: span -2;
     overflow: hidden;
-    margin: 20px;
+    margin-right: 50px;
       .imagen-sobre-mi {
         width: 100%;
         transition: 0.5s;
@@ -49,20 +68,22 @@
       }
   }
   .widget-1-sobre-mi {
-    height: 100px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
       .imagen-inter {
         height: 200px;
         transition: 0.5s;
       }
-  .imagen-inter:hover{
-    cursor: pointer;
-    transform: scale(1.2, 1.5);
-  }
+      .imagen-inter:hover{
+        cursor: pointer;
+        transform: scale(1.2, 1.5);
+      }
   }
   .widget-2-sobre-mi {
     background: linear-gradient(to top, blueviolet, rgb(64, 5, 118));
@@ -73,14 +94,21 @@
     align-items: center;
     justify-content: center;
     height: 250px;
-    grid-column: 2/4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin: 50px;
       .terapia{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
   }
-    .pie-sobre {
-      color: $color-6;
-      grid-column: span 3;
-    }
+  .pie-sobre {
+    color: $color-6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
   
 }

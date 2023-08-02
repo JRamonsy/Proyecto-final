@@ -202,37 +202,56 @@ footer .slogan {
 }
 
 .contenedor-sobre-mi {
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 5px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(7, auto);
+  align-content: space-evenly;
 }
 .contenedor-sobre-mi .titulo-sobre-mi {
   color: black;
   text-align: center;
   grid-column-start: 1;
   grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 .contenedor-sobre-mi .estudios {
   grid-column-start: 1;
   grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 40px;
+}
+.contenedor-sobre-mi .nombre {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
 }
 .contenedor-sobre-mi .contenido-sobre-mi {
-  grid-column: span 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
   text-align: justify;
+  margin: 50px;
 }
 .contenedor-sobre-mi .sidebar-sobre-mi {
   width: 350px;
-  grid-column: 3/4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-row: span -2;
   overflow: hidden;
-  margin: 20px;
+  margin-right: 50px;
 }
 .contenedor-sobre-mi .sidebar-sobre-mi .imagen-sobre-mi {
   width: 100%;
@@ -243,12 +262,14 @@ footer .slogan {
   transform: scale(1.3);
 }
 .contenedor-sobre-mi .widget-1-sobre-mi {
-  height: 100px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 250px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
 }
 .contenedor-sobre-mi .widget-1-sobre-mi .imagen-inter {
   height: 200px;
@@ -267,14 +288,21 @@ footer .slogan {
   align-items: center;
   justify-content: center;
   height: 250px;
-  grid-column: 2/4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  margin: 50px;
 }
 .contenedor-sobre-mi .widget-2-sobre-mi .terapia {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .contenedor-sobre-mi .pie-sobre {
   color: black;
-  grid-column: span 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
 }
 
 .contenedor-tarifas > div,
@@ -427,17 +455,46 @@ footer .slogan {
   }
 }
 /* Sobre mi*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1023px) {
+  .contenedor-sobre-mi {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, auto);
+  }
   .contenedor-sobre-mi .contenido-sobre-mi {
-    grid-column: 1/-1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
   }
   .contenedor-sobre-mi .sidebar-sobre-mi {
-    grid-column: 1/-1;
-    padding-right: 100px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin-left: 50px;
   }
-  .contenedor-sobre-mi .widget-1-sobre-mi,
+  .contenedor-sobre-mi .widget-1-sobre-mi {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+  .contenedor-sobre-mi .widget-1-sobre-mi .imagen-inter {
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+  }
   .contenedor-sobre-mi .widget-2-sobre-mi {
-    grid-column: span 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+  .contenedor-sobre-mi .pie-sobre {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
   }
 }
 /*tarifas*/

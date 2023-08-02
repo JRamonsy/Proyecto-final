@@ -24,47 +24,71 @@
     padding-right: 60px;
   }
 }
-
 @media all and (max-width: 1023px) {
-    .imagenes-servicios {
-        grid-column: 1 / span 3;
-        height: 210px;
-    }
+  .imagenes-servicios {
+    grid-column: 1 / span 3;
+    height: 210px;
+  }
 }
-
 @media all and (max-width: 1023px) {
-    .imagen-servicios {
-        padding-top: 10px;
-        margin-left: 120px;
-    }
+  .imagen-servicios {
+    padding-top: 10px;
+    margin-left: 120px;
+  }
 }
-
 @media all and (max-width: 1023px) {
-    .lista-servicios3 {
-        grid-column: 1 / span 3;
-        text-align: center;
-        list-style-type: none;
-        height: 190px;
-        padding-right: 60px;
-    }
+  .lista-servicios3 {
+    grid-column: 1 / span 3;
+    text-align: center;
+    list-style-type: none;
+    height: 190px;
+    padding-right: 60px;
+  }
 }
 
 /* Sobre mi*/
-@media screen and (max-width: 576px) {
-    .contenedor-sobre-mi .contenido-sobre-mi {
-        grid-column: 1 / -1;
-    }
 
-    .contenedor-sobre-mi .sidebar-sobre-mi {
-        grid-column: 1 / -1;
-        padding-right: 100px;
-    }
-
-    .contenedor-sobre-mi .widget-1-sobre-mi,
+@media screen and (max-width: 1023px) {
+  .contenedor-sobre-mi {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, auto);
+  }
+  .contenedor-sobre-mi .contenido-sobre-mi {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .contenedor-sobre-mi .sidebar-sobre-mi {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin-left: 50px;
+  }
+  .contenedor-sobre-mi .widget-1-sobre-mi {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+  .contenedor-sobre-mi .widget-1-sobre-mi .imagen-inter{
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+  }
     .contenedor-sobre-mi .widget-2-sobre-mi {
-        grid-column: span 3;
-    }
-
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 6;
+      grid-row-end: 7;
+  }
+  .contenedor-sobre-mi .pie-sobre{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
 }
 
 /*tarifas*/
