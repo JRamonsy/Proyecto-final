@@ -515,22 +515,21 @@ footer .slogan {
   }
 }
 /*tarifas*/
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-  .contenedor-tarifas {
-    width: 90%;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: "titulo-Tarifas titulo-Tarifas" "contenido1 contenido1" "widget-1 widget-2" "contenido2 contenido2" "widget-3 widget-4" "pie-tarifas pie-tarifas";
-  }
-}
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1023px) {
   .contenedor-tarifas {
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(8, auto);
-    grid-template-areas: "titulo-Tarifas " "contenido1" "widget-1" "widget-2" "contenido2" "widget-3" "widget-4" "pie-tarifas";
+    grid-template-areas: "titulo-Tarifas" "contenido1" "widget-1" "widget-2" "contenido2" "widget-3" "widget-4" "pie-tarifas";
+  }
+  .contenedor-tarifas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenido2 {
+    max-width: 500px;
   }
 }
 /*contacto y ubicacion*/
