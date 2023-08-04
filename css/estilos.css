@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+}
+
+body {
+  padding-top: 90px;
+  background: linear-gradient(rgb(228, 226, 226), white);
+}
+
 /* colores */ /*alineacion del footer*/ /*pagina index y servicios*/
 .titulo-pagina {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -514,25 +523,16 @@ footer .slogan {
     grid-template-areas: "titulo-Tarifas titulo-Tarifas" "contenido1 contenido1" "widget-1 widget-2" "contenido2 contenido2" "widget-3 widget-4" "pie-tarifas pie-tarifas";
   }
 }
-/*
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 599px) {
   .contenedor-tarifas {
     width: 100%;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, auto);
-    grid-template-areas: "titulo-Tarifas "
-                          "contenido1"
-                          "widget-1"
-                          "widget-2"
-                          "contenido2"
-                          "widget-3"
-                          "widget-4"
-                          "pie-tarifas"
+    grid-template-areas: "titulo-Tarifas " "contenido1" "widget-1" "widget-2" "contenido2" "widget-3" "widget-4" "pie-tarifas";
   }
 }
-*/
 /*contacto y ubicacion*/
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .contenedor-contacto-ubicacion {
@@ -555,14 +555,6 @@ footer .slogan {
   .contenido-ubicacion {
     width: 90%;
   }
-}
-* {
-  margin: 0;
-}
-
-body {
-  padding-top: 90px;
-  background: linear-gradient(rgb(228, 226, 226), white);
 }
 
 /*# sourceMappingURL=estilos.css.map */

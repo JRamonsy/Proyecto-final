@@ -106,9 +106,10 @@
                           "pie-tarifas pie-tarifas"
   }
 }
-/*
-@media screen and (max-width: 1023px) {
+
+@media screen and (max-width: 599px) {
   .contenedor-tarifas {
+    
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -124,7 +125,7 @@
                           "pie-tarifas"
   }
 }
-*/
+
 
 /*contacto y ubicacion*/
 @media screen and (min-width: 600px) and (max-width: 1023px) {
