@@ -398,6 +398,7 @@ footer .slogan {
   background: linear-gradient(to top, rgb(245, 244, 245), rgb(201, 201, 201));
   border-radius: 10px;
   border: black 2px solid;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   text-align: center;
   display: flex;
   align-items: center;
