@@ -395,6 +395,9 @@ footer .slogan {
   grid-area: titulo-ubicacion;
 }
 .contenedor-contacto-ubicacion .contenido-ubicacion {
+  background: linear-gradient(to top, rgb(245, 244, 245), rgb(201, 201, 201));
+  border-radius: 10px;
+  border: black 2px solid;
   text-align: center;
   display: flex;
   align-items: center;
