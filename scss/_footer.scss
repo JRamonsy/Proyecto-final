@@ -1,9 +1,11 @@
 footer{
+  margin-bottom: 0;
   .informativo {
-    @include alineacion-footer (center, $color-5, none);
+    @include alineacion-footer (center, $color-11, none);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   }
   .slogan {
-    @include alineacion-footer (center, $color-3, uppercase );
+    @include alineacion-footer (center, $color-10, uppercase );
   }
 }
 
