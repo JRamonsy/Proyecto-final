@@ -24,6 +24,8 @@
     .contenido-contacto {
       text-align: center;
       grid-area: contenido-contacto;
+      font-size: 20px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .titulo-ubicacion {
       text-align: center;
@@ -31,18 +33,21 @@
       grid-area: titulo-ubicacion;
     }
     .contenido-ubicacion {
-      background: linear-gradient(to top, rgb(245, 244, 245), rgb(201, 201, 201));
+      
+      width: 350px;
+      background: linear-gradient(to top, rgb(147, 186, 148), rgb(189, 239, 185));
       border-radius: 10px;
-      border: black 2px solid;
+      border: black 1px solid;
       box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
       text-align: center;
       display: flex;
       align-items: center;
       align-self: center;
       grid-area: contenido-ubicacion;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         .mapa {
+          
           color: white;
-          height: 500px;
           text-align: center;
           display: flex;
           align-items: center;
