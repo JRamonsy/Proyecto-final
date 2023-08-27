@@ -119,6 +119,7 @@
 }
 
 /*contacto y ubicacion*/
+
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .contenedor-contacto-ubicacion {
     grid-template-areas: "titulo-contacto titulo-contacto"
@@ -159,3 +160,4 @@
     width: 90%;
   }
 }
+
