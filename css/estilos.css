@@ -5,7 +5,7 @@
 
 body {
   padding-top: 90px;
-  background: linear-gradient(rgb(228, 226, 226), white);
+  background: linear-gradient(rgb(155, 193, 174), white);
 }
 
 /* colores */ /*alineacion del footer*/ /*pagina index y servicios*/
@@ -64,7 +64,7 @@ body {
 }
 
 .navbar {
-  box-shadow: 0 4px 5px #e5e5e5;
+  box-shadow: 0 4px 5px grey;
   background-color: rgb(217, 214, 211);
 }
 .navbar .logo {
@@ -158,6 +158,7 @@ footer .slogan {
   background: linear-gradient(to top, rgb(245, 244, 245), rgb(201, 201, 201));
   position: relative;
   flex: 1;
+  height: 500px;
   max-width: 300px;
   border-radius: 10px;
   border: black 2px solid;
@@ -181,6 +182,7 @@ footer .slogan {
 
 .card-img {
   width: 100%;
+  height: 180px;
   transition: 0.5s;
   object-fit: cover;
 }
